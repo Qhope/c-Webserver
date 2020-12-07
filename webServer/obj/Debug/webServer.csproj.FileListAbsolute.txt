@@ -1,0 +1,9 @@
+C:\Users\vuqua\source\repos\webServer\webServer\bin\Debug\webServer.exe.config
+C:\Users\vuqua\source\repos\webServer\webServer\bin\Debug\webServer.exe
+C:\Users\vuqua\source\repos\webServer\webServer\bin\Debug\webServer.pdb
+C:\Users\vuqua\source\repos\webServer\webServer\obj\Debug\webServer.csprojAssemblyReference.cache
+C:\Users\vuqua\source\repos\webServer\webServer\obj\Debug\webServer.csproj.CoreCompileInputs.cache
+C:\Users\vuqua\source\repos\webServer\webServer\obj\Debug\webServer.exe
+C:\Users\vuqua\source\repos\webServer\webServer\obj\Debug\webServer.pdb
+C:\Users\vuqua\source\repos\webServer\webServer\bin\Debug\index.html
+C:\Users\vuqua\source\repos\webServer\webServer\bin\Debug\4k.jpg
