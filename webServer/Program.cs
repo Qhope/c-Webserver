@@ -13,13 +13,14 @@ namespace webServer
             var server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             server.Bind(new IPEndPoint(IPAddress.Loopback, 80));
             server.Listen(10);
+            
             while (true)
             {
                 var s = server.Accept();
                 var bReceive = new byte[1024];
                 var sss = s.Receive(bReceive);
-                string rBuffer = Encoding.ASCII.GetString(bReceive);
 
+                string rBuffer = Encoding.ASCII.GetString(bReceive);
 
                 var iStartPos = rBuffer.IndexOf("HTTP", 1);
                 string sHttpVersion = rBuffer.Substring(iStartPos, 8);
@@ -106,12 +107,29 @@ namespace webServer
                 }
                 else if (sRequest.StartsWith("POST"))
                 {
-                    var admin = "admin";
-                    if (admin == "admin")
+                    var admin = "Username=admin&Password=admin";
+                    if(rBuffer==admin)
                     {
-                        response = sHttpVersion + " 301 Moved Permanently \r\n location: /info.html";
-                       
+                        Console.WriteLine("None ");
                     }
+                    else
+                    {
+                        response = File.ReadAllText("404.html");
+
+                        var length = Encoding.ASCII.GetBytes(response);
+                        header = header + sHttpVersion + " 404 Not Found" + "\r\n";
+                        header = header + "Server: cx1193719-b\r\n";
+                        header = header + "Content-Type: " + "text/html" + "\r\n";
+                        header = header + "Accept-Ranges: bytes\r\n";
+                        header = header + "Content-Length: " + length.Length + "\r\n\r\n";
+                        encodeheader = Encoding.ASCII.GetBytes(header);
+                        Console.WriteLine(header);
+
+                        var sendBuffer = Encoding.ASCII.GetBytes(response);
+                        s.Send(encodeheader);
+                        s.Send(sendBuffer);
+                    }
+                    
                 }
                 Console.WriteLine(rBuffer);
                 s.Close();

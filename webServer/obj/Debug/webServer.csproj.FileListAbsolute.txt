@@ -9,3 +9,5 @@ C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.exe
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.pdb
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\favicon.ico
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\404.css
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\404.html
