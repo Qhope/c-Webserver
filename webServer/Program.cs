@@ -35,7 +35,7 @@ namespace webServer
                 {
                     if (sRequest.Contains("index.html"))
                     {
-                        response = File.ReadAllText("index.html");
+                        response = File.ReadAllText(@"Index\index.html");
 
                         var length= Encoding.ASCII.GetBytes(response);
                         header = header + sHttpVersion + " 200 OK" + "\r\n";
@@ -52,7 +52,7 @@ namespace webServer
                     }
                     else if (sRequest.Contains("4k.JPG"))
                     {
-                        var responseImage = File.ReadAllBytes("4k.JPG");
+                        var responseImage = File.ReadAllBytes(@"Index\4k.JPG");
                        
                         var length = Encoding.ASCII.GetBytes(response);
                         header = header + sHttpVersion + " 200 OK" + "\r\n";
@@ -68,7 +68,7 @@ namespace webServer
                     }
                     else if (sRequest.Contains("favicon.ico"))
                     {
-                        var responseImage = File.ReadAllBytes("favicon.ico");
+                        var responseImage = File.ReadAllBytes(@"Index\favicon.ico");
 
                         header = header + sHttpVersion + " 200 OK" + "\r\n";
                         header = header + "Server: cx1193719-b\r\n";
@@ -85,7 +85,7 @@ namespace webServer
                     else if (sRequest.Contains("style.css"))
                     {
                        
-                        response = File.ReadAllText("style.css");
+                        response = File.ReadAllText(@"Index\style.css");
 
                         var sendCss = Encoding.ASCII.GetBytes(response);
                         
@@ -102,19 +102,80 @@ namespace webServer
                         s.Send(encodeheader);
                         s.Send(sendCss);
                     }
-                    
+                    else if (sRequest.Contains("Sang.jpg"))
+                    {
+                        var responseImage = File.ReadAllBytes(@"info_files\Sang.JPG");
+
+                        var length = Encoding.ASCII.GetBytes(response);
+                        header = header + sHttpVersion + " 200 OK" + "\r\n";
+                        header = header + "Server: cx1193719-b\r\n";
+                        header = header + "Content-Type: " + "image/jpeg" + "\r\n";
+                        header = header + "Accept-Ranges: bytes\r\n";
+                        header = header + "Content-Length: " + responseImage.Length + "\r\n\r\n";
+                        encodeheader = Encoding.ASCII.GetBytes(header);
+                        Console.WriteLine(header);
+
+                        s.Send(encodeheader);
+                        s.Send(responseImage, responseImage.Length, SocketFlags.None);
+                    }
+                    else if (sRequest.Contains("VuQuangHop.jpg"))
+                    {
+                        var responseImage = File.ReadAllBytes(@"info_files\VuQuangHop.JPG");
+
+                        var length = Encoding.ASCII.GetBytes(response);
+                        header = header + sHttpVersion + " 200 OK" + "\r\n";
+                        header = header + "Server: cx1193719-b\r\n";
+                        header = header + "Content-Type: " + "image/jpeg" + "\r\n";
+                        header = header + "Accept-Ranges: bytes\r\n";
+                        header = header + "Content-Length: " + responseImage.Length + "\r\n\r\n";
+                        encodeheader = Encoding.ASCII.GetBytes(header);
+                        Console.WriteLine(header);
+
+                        s.Send(encodeheader);
+                        s.Send(responseImage, responseImage.Length, SocketFlags.None);
+                    }
+                     else if (sRequest.Contains("background.jpg"))
+                    {
+                        var responseImage = File.ReadAllBytes(@"info_files\background.JPG");
+                       
+                        var length = Encoding.ASCII.GetBytes(response);
+                        header = header + sHttpVersion + " 200 OK" + "\r\n";
+                        header = header + "Server: cx1193719-b\r\n";
+                        header = header + "Content-Type: " + "image/jpeg" + "\r\n";
+                        header = header + "Accept-Ranges: bytes\r\n";
+                        header = header + "Content-Length: " + responseImage.Length + "\r\n\r\n";
+                        encodeheader = Encoding.ASCII.GetBytes(header);
+                        Console.WriteLine(header);
+
+                        s.Send(encodeheader);
+                        s.Send(responseImage, responseImage.Length, SocketFlags.None);
+                    }
+
 
                 }
                 else if (sRequest.StartsWith("POST"))
                 {
                     var admin = "Username=admin&Password=admin";
-                    if(rBuffer==admin)
+                    if(rBuffer.Contains(admin))
                     {
-                        Console.WriteLine("None ");
+                        response = File.ReadAllText(@"info_files\info.html");
+
+                        var length = Encoding.ASCII.GetBytes(response);
+                        header = header + sHttpVersion + " 301 Moved Permanently" + "\r\n";
+                        header = header + "Server: cx1193719-b\r\n";
+                        header = header + "Content-Type: " + "text/html" + "\r\n";
+                        header = header + "Accept-Ranges: bytes\r\n";
+                        header = header + "Content-Length: " + length.Length + "\r\n\r\n";
+                        encodeheader = Encoding.UTF8.GetBytes(header);
+                        Console.WriteLine(header);
+
+                        var sendBuffer = Encoding.UTF8.GetBytes(response);
+                        s.Send(encodeheader);
+                        s.Send(sendBuffer);
                     }
                     else
                     {
-                        response = File.ReadAllText("404.html");
+                        response = File.ReadAllText(@"404\404.html");
 
                         var length = Encoding.ASCII.GetBytes(response);
                         header = header + sHttpVersion + " 404 Not Found" + "\r\n";

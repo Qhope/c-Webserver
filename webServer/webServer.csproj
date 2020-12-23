@@ -50,22 +50,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="404.css">
+    <Content Include="404\404.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="404.html">
+    <Content Include="Index\4k.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="4k.jpg">
+    <Content Include="Index\favicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="favicon.ico">
+    <Content Include="Index\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="index.html">
+    <Content Include="Index\style.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="style.css">
+    <Content Include="info_files\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="info_files\info.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="info_files\Sang.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="info_files\VuQuangHop.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -1,6 +1,3 @@
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\4k.jpg
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\index.html
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\style.css
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\webServer.exe.config
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\webServer.exe
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\webServer.pdb
@@ -8,6 +5,12 @@ C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.csproj.CoreCompileInputs.cache
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.exe
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\obj\Debug\webServer.pdb
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\favicon.ico
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\404.css
-C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\404.html
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\404\404.html
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\Index\4k.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\Index\favicon.ico
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\Index\index.html
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\Index\style.css
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\background.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\info.html
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\Sang.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\VuQuangHop.jpg
