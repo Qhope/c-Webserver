@@ -14,3 +14,9 @@ C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\info.html
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\Sang.jpg
 C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\info_files\VuQuangHop.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\download\bay.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\download\car.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\download\lion.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\download\nightcity.jpg
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\Index\file.html
+C:\Users\vuqua\source\repos\webServer\c-Webserver\webServer\bin\Debug\download\mountain.jpg
