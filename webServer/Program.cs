@@ -197,11 +197,6 @@ namespace webServer
             }
         }
 
-        private string IndexPage(string url) {
-            if (url == "index.html")
 
-                return File.ReadAllText("index.html");
-            return "";
-        }
     }
 }
